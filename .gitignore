@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pth
+*.npy
+*.pt
+*.log
+wandb/
+feat/
+data/
+pred.txt
+true.txt
+exp/

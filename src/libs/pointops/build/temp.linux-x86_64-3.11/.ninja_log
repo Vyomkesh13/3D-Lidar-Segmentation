@@ -1,0 +1,20 @@
+# ninja log v5
+0	35752	1747607567813994443	/home/anzeliu/Projects/3DSeg/src/libs/pointops/build/temp.linux-x86_64-3.11/src/aggregation/aggregation_cuda.o	8dd98aa66ccf332e
+3	35821	1747607567902003725	/home/anzeliu/Projects/3DSeg/src/libs/pointops/build/temp.linux-x86_64-3.11/src/interpolation/interpolation_cuda.o	c5cdd1dd43b6cae
+1	35920	1747607567987012690	/home/anzeliu/Projects/3DSeg/src/libs/pointops/build/temp.linux-x86_64-3.11/src/ball_query/ball_query_cuda.o	e15ca17a59ac528a
+0	37919	1747607569992224168	/home/anzeliu/Projects/3DSeg/src/libs/pointops/build/temp.linux-x86_64-3.11/src/attention/attention_cuda.o	bb7e300b779f8e93
+2	39233	1747607571307362868	/home/anzeliu/Projects/3DSeg/src/libs/pointops/build/temp.linux-x86_64-3.11/src/grouping/grouping_cuda.o	2f685a3a1428f87e
+35783	66523	1747607598596240875	/home/anzeliu/Projects/3DSeg/src/libs/pointops/build/temp.linux-x86_64-3.11/src/knn_query/knn_query_cuda.o	c49d04512d55089b
+37920	67516	1747607599606347405	/home/anzeliu/Projects/3DSeg/src/libs/pointops/build/temp.linux-x86_64-3.11/src/random_ball_query/random_ball_query_cuda.o	d0c5c076fe387d63
+2	69380	1747607601427539476	/home/anzeliu/Projects/3DSeg/src/libs/pointops/build/temp.linux-x86_64-3.11/src/grouping/grouping_cuda_kernel.o	8b052f5e4776c8ed
+1	70566	1747607602617664992	/home/anzeliu/Projects/3DSeg/src/libs/pointops/build/temp.linux-x86_64-3.11/src/attention/attention_cuda_kernel.o	45e42a187695ce85
+4	71262	1747607603304737454	/home/anzeliu/Projects/3DSeg/src/libs/pointops/build/temp.linux-x86_64-3.11/src/interpolation/interpolation_cuda_kernel.o	a19c5e8ad99985a1
+0	71443	1747607603480756017	/home/anzeliu/Projects/3DSeg/src/libs/pointops/build/temp.linux-x86_64-3.11/src/aggregation/aggregation_cuda_kernel.o	e489c01cc16d3c5c
+2	71874	1747607603949805486	/home/anzeliu/Projects/3DSeg/src/libs/pointops/build/temp.linux-x86_64-3.11/src/ball_query/ball_query_cuda_kernel.o	b33759e32b7af20d
+69385	91021	1747607623113826609	/home/anzeliu/Projects/3DSeg/src/libs/pointops/build/temp.linux-x86_64-3.11/src/subtraction/subtraction_cuda.o	c36e607e03a07dfe
+66523	92025	1747607624115932296	/home/anzeliu/Projects/3DSeg/src/libs/pointops/build/temp.linux-x86_64-3.11/src/sampling/sampling_cuda.o	4f1463f5f9138d63
+35822	93895	1747607625972128058	/home/anzeliu/Projects/3DSeg/src/libs/pointops/build/temp.linux-x86_64-3.11/src/knn_query/knn_query_cuda_kernel.o	f248a63c7bed81b8
+35924	94410	1747607626490182694	/home/anzeliu/Projects/3DSeg/src/libs/pointops/build/temp.linux-x86_64-3.11/src/pointops_api.o	10106780552bb4ef
+39238	97553	1747607629640514942	/home/anzeliu/Projects/3DSeg/src/libs/pointops/build/temp.linux-x86_64-3.11/src/random_ball_query/random_ball_query_cuda_kernel.o	9dc762092f2214e6
+70567	110532	1747607642619883804	/home/anzeliu/Projects/3DSeg/src/libs/pointops/build/temp.linux-x86_64-3.11/src/subtraction/subtraction_cuda_kernel.o	a7f72fb182aad0be
+67518	111605	1747607643691996873	/home/anzeliu/Projects/3DSeg/src/libs/pointops/build/temp.linux-x86_64-3.11/src/sampling/sampling_cuda_kernel.o	a97e7fbd327a390d
