@@ -133,8 +133,8 @@ class DINOPT(nn.Module):
         image_features = torch.cat(image_features_list, dim=-1)
 
         ############### Move Model Inputs to Cuda ###############
-        padded_point_features = padded_point_features.cuda()
-        image_features = image_features.cuda()
+        padded_point_features = padded_point_features.to(self.device)
+        image_features = image_features.to(self.device)
 
         return padded_point_features, image_features, padding_mask
 
@@ -160,7 +160,7 @@ class DINOPT(nn.Module):
 
         # residual
         if self.residual:
-            out_features = out_features + point_features.cuda()
+            out_features = out_features + point_features.to(self.device)
 
         # segmentation logits (N)
         seg_logits = self.segmentation_head(out_features)
@@ -184,14 +184,14 @@ class DINOPT(nn.Module):
         combo_features[:, :, self.point_in_dim:] = combo_features[:, :, self.point_in_dim:] / len(CAMERA_TYPES)
                     
         # move model input to cuda
-        combo_features = combo_features.cuda()
+        combo_features = combo_features.to(self.device)
 
         # apply model to combined features
         out_features = self.model(combo_features)
 
         # residual
         if self.residual:
-            out_features = out_features + padded_point_features.cuda()
+            out_features = out_features + padded_point_features.to(self.device)
 
         # segmentation logits (N)
         seg_logits = self.segmentation_head(out_features)
@@ -202,7 +202,7 @@ class DINOPT(nn.Module):
         # (num_batch_voxels, 64)
         point_features = point_feature_dict['feat']
 
-        point_features = point_features.cuda()
+        point_features = point_features.to(self.device)
 
         seg_logits = self.segmentation_head(point_features)
 
@@ -292,7 +292,7 @@ def dinopt_train_val(model:DINOPT,
             assert seg_logits.shape[0] == segment.shape[0], f"seg logits shape: {seg_logits.shape}, segment shape: {segment.shape}"
 
             ############### Compute Loss and Backpropagation ###############
-            loss = model.criteria(seg_logits.cuda(), segment.cuda())
+            loss = model.criteria(seg_logits.to(self.device), segment.to(self.device))
 
             if is_training:
                 optimizer.zero_grad()

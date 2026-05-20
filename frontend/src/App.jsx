@@ -288,7 +288,7 @@ export default function App() {
                     { name: 'PTv3 only', miou: 0.65, color: '#555' },
                     { name: 'DirectFusion', miou: 0.6768, color: '#888' },
                     { name: 'ProjectionFusion (10ep)', miou: 0.6896, color: '#aaa' },
-                    { name: 'Ours (25ep + cosine)', miou: 0.6913, color: '#00d4ff' },
+                    { name: '25ep + CosineAnnealingLR', miou: 0.6913, color: '#00d4ff' },
                     
                 ].map(m => (
                     <div key={m.name} style={{ marginBottom: 6 }}>
